@@ -1,0 +1,20 @@
+{
+  "name": "patov1",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "15.6.1",
+    "mathjs": "3.17.0",
+    "react-dom": "15.6.1",
+    "styled-components": "2.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
