@@ -4,7 +4,6 @@ import './style.css';
 import Brackground from './background';
 import Player from './player';
 import Obstacle from './obstacle';
-import BgMusic from './bgMusic';
 import Hud from './hud';
 
 const SPACE_KEY_CODE = 32;
@@ -239,19 +238,12 @@ class App extends Component {
   render() {
     return (
       <div id="wrapper" ref={(c) => (this._wrapper = c)}>
-        <BgMusic
-          gameOver={this.state.gameOver}
-          running={this.state.running}
-          mute={this.state.mute}
-        />
         <Brackground
           gameOver={this.state.gameOver}
           running={this.state.running}
         >
           <Hud
             score={this.state.score}
-            mute={this.state.mute}
-            onMuteToogle={this.onMuteToogle}
           />
           <Player
             running={this.state.running}
