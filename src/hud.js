@@ -14,7 +14,6 @@ export class Hud extends Component {
     return (
       <Container>
         Score: {this.props.score}
-        <p onClick={() => this.props.onMuteToogle(!this.props.mute)}>{this.props.mute ? 'Unmute': 'Mute'}</p>
       </Container>
     )
   }
